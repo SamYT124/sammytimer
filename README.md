@@ -2,7 +2,7 @@ this is made as a solo project to learn how to code.
 use it if you wish, but your sessions WON'T BE SAVED.
 
 Space to start and stop timer on PC
-As of now, no mobile compatability yet.
+As of now, no mobile compatibility yet.
 
 Update Log: 
 
@@ -15,3 +15,4 @@ v0.5:
 v0.6:
 - Added Megaminx, Pyraminx, Skewb, 5x5, and Square-1 support with scramble generator.
 - Added the new scramble feature.
+- Resized the text so it is compatible with all devices.

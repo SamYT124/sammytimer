@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden; 
+                user-select: none;
+            }
+            body {
+                font-family: sans-serif;
+                background-color: black;
+                color: white; 
+            }
+            h1 {
+                font-size: clamp(2rem, 19.53vw, 31.25rem);
+                text-align: center;
+            }
+            .stats {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                text-align: right; 
+            }
+            .botrig {
+                margin: 5px 0; 
+                font-size: clamp(1.5rem, 2vw, 3.125rem);
+                font-weight: normal; 
+            }
+            .btmlbtn {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                text-align: left; 
+            }
+            .toprbtn {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                text-align: left; 
+            }
+            .centertext {
+                text-align: center;
+            }
+            .scramble {
+                text-align: center;
+                font-size: 50px;
+                max-width: 1700px;
+                width: 100%;  
+                margin: 0 auto; 
+            }
+        </style>
+        <title>SammyTimer v0.6</title>
+    </head>
+    <body>
+        <h3 class="scramble" id="scramble">scramble</h3>
+        <h1 id="stopw">0.00</h1>
+        <p class="centertext">bad cubing timer - made by sam</p>
+        <div class="stats">
+            <h3 class="botrig" id="ao5">Ao5: - </h3>
+            <h3 class="botrig" id="ao12">Ao12: - </h3>
+            <h3 class="botrig" id="ao50">Ao50: - </h3>
+            <h3 class="botrig" id="best">Best: - </h3>
+            <h3 class="botrig" id="mean">Mean: - </h3>
+            <h3 class="botrig" id="count">Count: - </h3>
+        </div>
+        <div class="btmlbtn">
+            <button id="dellast" class="botrig">Delete Last Solve</button>
+            <button id="penalty" class="botrig">Mark +2</button>
+            <button id="copyao5" class="botrig">Copy Ao5</button>
+        </div>
+        <div class="toprbtn">
+            <label class="botrig">Cube : </label>
+            <select id="cube" class="botrig">
+                <option value="3x3">3x3</option>
+                <option value="2x2">2x2</option>
+                <option value="4x4">4x4</option>
+                <option value="5x5">5x5</option>
+                <option value="skewb">Skewb</option>
+                <option value="pyra">Pyraminx</option>
+                <option value="sq1">Square-1</option>
+                <option value="mega">Megaminx</option>
+            </select>
+        </div>
+    </body>
+    <script src="./code.js"></script>
+</html>

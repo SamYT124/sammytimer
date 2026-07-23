@@ -3,6 +3,7 @@ use it if you wish, but your sessions WON'T BE SAVED.
 
 Space to start and stop timer on PC
 As of now, no mobile compatibility yet.
+yeah thats it
 
 Update Log: 
 

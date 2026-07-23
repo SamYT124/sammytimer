@@ -375,7 +375,7 @@ function generate7x7Scramble(length = 100) {
 }
 
 function generateClockScramble() {
-    const faces = ['UR', 'DR', 'UL', 'DL', 'U', 'R', 'D', 'L', 'ALL'];
+    const faces = ['UR', 'DR', 'DL', 'UL', 'U', 'R', 'D', 'L', 'ALL'];
     const faces2 = ['U', 'R', 'D', 'L', 'ALL'];
     const ticks = ['0', '1', '2', '3', '4', '5', '6'];
     const modifiers = ['+', '-'];

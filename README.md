@@ -16,3 +16,8 @@ v0.6:
 - Added Megaminx, Pyraminx, Skewb, 5x5, and Square-1 support with scramble generator.
 - Added the new scramble feature.
 - Resized the text so it is compatible with all devices.
+
+v0.7:
+- Added Clock, 6x6, and 7x7 support.
+- Added BG and text color customization options.
+- Fixed UI bugs.

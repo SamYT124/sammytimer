@@ -1,8 +1,10 @@
 this is made as a solo project to learn how to code.
 use it if you wish, but your sessions WON'T BE SAVED.
+it took me total like 6-7 hours tp code this whole thing lol.
 
 Space to start and stop timer on PC
 As of now, no mobile compatibility yet.
+
 yeah thats it
 
 Update Log: 
@@ -22,3 +24,9 @@ v0.7:
 - Added Clock, 6x6, and 7x7 support.
 - Added BG and text color customization options.
 - Fixed UI bugs.
+
+v0.8:
+- Added Settings button.
+- Added UI customization.
+- Fixed UI bugs.
+- Added copy Ao12 and Ao50 options.

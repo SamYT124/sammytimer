@@ -30,3 +30,8 @@ v0.8:
 - Added UI customization.
 - Fixed UI bugs.
 - Added copy Ao12 and Ao50 options.
+
+v0.9:
+- Added more UI customization options.
+- Added mobile compatibility.
+- Added import-export times.

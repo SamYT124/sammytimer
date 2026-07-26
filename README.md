@@ -35,3 +35,9 @@ v0.9:
 - Added more UI customization options.
 - Added mobile compatibility.
 - Added import-export times.
+
+v1.0:
+- Added Inspection.
+- Added FTO support.
+- Fixed UI.
+- Added time list.

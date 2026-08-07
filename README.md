@@ -41,3 +41,8 @@ v1.0:
 - Added FTO support.
 - Fixed UI.
 - Added time list.
+
+v1.1:
+- Cleaned up the UI
+- Added the Hide UI while solving button.
+- Added the Hide Timer while solving button.

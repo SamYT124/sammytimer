@@ -6,6 +6,7 @@ Space to start and stop timer on PC
 As of now, no mobile compatibility yet.
 
 Website: https://sammytimer-gilt.vercel.app
+Alternative (backup): https://samyt124.github.io/sammytimer/
 
 yeah thats it
 

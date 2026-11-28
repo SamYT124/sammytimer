@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./assets/style.css">
+        <title>SammyTimer v2.1.1</title>
+    </head>
+    <body>
+        <h3 class="scramble" id="scramble">scramble</h3>
+        <h1 id="stopw">
+            0.00
+        </h1>
+        <div class="stats" id="stats">
+            <h3 class="botrig" id="ao5">Ao5: - </h3>
+            <h3 class="botrig" id="ao12">Ao12: - </h3>
+            <h3 class="botrig" id="ao50">Ao50: - </h3>
+            <h3 class="botrig" id="best">Best: - </h3>
+            <h3 class="botrig" id="mean">Mean: - </h3>
+            <h3 class="botrig" id="count">Count: - </h3>
+        </div>
+        <div class="btmlbtn" id="btmlbtn">
+            <button id="dellast" class="botrig">Delete Last Solve</button>
+            <button id="penalty" class="botrig">Mark +2</button>
+            <input type="file" id="json-file-picker" accept=".json" style="display: none;">
+        </div>
+        <div class="toplbtn" id="toplbtn">
+            <button id="openSettingsBtn" class="toprig"><img src="./assets/images/settingsicon.png" alt="🛠" style="width: 1em; height: 1em; object-fit: contain; vertical-align: middle;"></button>
+            <button id="openTimesBtn" class="toprig"><img src="./assets/images/timesicon.png" alt="🕐︎" style="width: 1em; height: 1em; object-fit: contain; vertical-align: middle;"></button>
+            <button id="export" class="toprig"><img src="./assets/images/exporticon.png" alt="📤︎" style="width: 1em; height: 1em; object-fit: contain; vertical-align: middle;"></button>
+            <button id="import-btn" class="toprig"><img src="./assets/images/importicon.png" alt="📥︎" style="width: 1em; height: 1em; object-fit: contain; vertical-align: middle;"></button>
+            <button id="openCNLBtn" class="toprig"><img src="./assets/images/changelogicon.png" alt="🗎" style="width: 1em; height: 1em; object-fit: contain; vertical-align: middle;"></button>
+        </div>
+        <dialog id="settings">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button id="closeSettingsBtn" class="close-btn">&times;</button>
+            </div>
+            <div class="setting-item">
+                <label class="label">🖵 UI:</label>
+                <div>
+                    <button id="bgPickerButton" class="setbtn">BG Color</button>
+                    <button id="statPickerButton" class="setbtn">Stats Text Color</button>
+                    <input type="color" id="bgColorPicker" value="#4A90E2" style="display: none;">
+                    <input type="color" id="statColorPicker" value="#4A90E2" style="display: none;">
+                    <button id="scramPickerButton" class="setbtn">Scramble Text Color</button>
+                    <input type="color" id="scramColorPicker" value="#4A90E2" style="display: none;">
+                    <button id="btnPickerButton" class="setbtn">Button BG Color</button>
+                    <input type="color" id="btnColorPicker" value="#4A90E2" style="display: none;">
+                    <button id="btntxtPickerButton" class="setbtn">Button Text Color</button>
+                    <input type="color" id="btntxtColorPicker" value="#4A90E2" style="display: none;">
+                    <br>
+                    <label class="label">Font : </label>
+                    <select id="font" class="setbtn">
+                        <option value="roboto">Roboto</option>
+                        <option value="verdana">Verdana</option>
+                        <option value="courn">Courier New</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="tnr">Times New Roman</option>
+                        <option value="trebuchet">Trebuchet MS</option>
+                    </select>
+                    <br>
+                    <label class="label">BG Image : </label>
+                    <input type="url" id="bg-url" placeholder="https://example.com">
+                    <button id="apply-bg" class="setbtn">Apply</button>
+                    <br>
+                    <label class="label">Timer Scale : </label>
+                    <input type="range" id="size-slider" min="50" max="150" value="100" oninput="scaleText(this.value)">
+                    <span id="percentage-label">100%</span>
+                </div> 
+                <br>
+                <hr>
+                <br>
+                <label class="label">◴ Timer:</label>
+                <div>
+                    <button id="inspection" class="setbtn">Inspection : OFF</button>
+                    <button id="huiws" class="setbtn">Hide UI While Solving : OFF</button>
+                    <button id="htws" class="setbtn">Hide Timer While Solving : OFF</button>
+                </div>
+            </div>
+        </dialog>
+
+        <dialog id="timesList">
+            <div class="modal-header">
+                <h2>Times</h2>
+                <button id="closeTimesBtn" class="close-btn">&times;</button>
+            </div>
+            <p id="timess"></p>
+        </dialog>
+
+        <dialog id="changelog">
+            <div class="cnlmodal">
+                <h2>Changelog</h2>
+                <button id="closeCNLBtn" class="close-btn">&times;</button>
+            </div>
+            <p>this is made as a solo project to learn how to code.</p>
+<p>use it if you wish, but your sessions WON'T BE SAVED (unless you import/export times via exporting feature, but it is still client-sided).</p>
+<p>it took me total like 6-7 hours to code this whole thing lol.</p>
+<br>
+<p>Space to start and stop timer on PC</p>
+<p>As of now, no mobile compatibility yet.</p>
+<br>
+<p>Website: https://sammytimer-gilt.vercel.app</p>
+<p>Alternative (backup): https://samyt124.github.io/sammytimer/</p>
+<br>
+<p>yeah thats it</p>
+<br>
+<p>Update Log:</p>
+<br>
+<p>v2.2.0:</p>
+<p>- Changed the icons for the top-right buttons</p>
+<p>- Fixed the UI for the top-right buttons</p>
+<p>- Added a channelog button</p>
+<br>
+<p>v2.1.1:</p>
+<p>- Moved the timer to a new website: https://sammytimer-gilt.vercel.app</p>
+<p>- Fixed UI issues with buttons</p>
+<br>
+<p>v2.1.0:</p>
+<p>- Cleaned up the UI</p>
+<p>- Added the Hide UI while solving button.</p>
+<p>- Added the Hide Timer while solving button.</p>
+<br>
+<p>v2.0.0:</p>
+<p>- Added Inspection.</p>
+<p>- Added FTO support.</p>
+<p>- Fixed UI.</p>
+<p>- Added time list.</p>
+<br>
+<p>v1.4.0:</p>
+<p>- Added more UI customization options.</p>
+<p>- Added mobile compatibility.</p>
+<p>- Added import-export times.</p>
+<br>
+<p>v1.3.0:</p>
+<p>- Added Settings button.</p>
+<p>- Added UI customization.</p>
+<p>- Fixed UI bugs.</p>
+<p>- Added copy Ao12 and Ao50 options.</p>
+<br>
+<p>v1.2.0:</p>
+<p>- Added Clock, 6x6, and 7x7 support.</p>
+<p>- Added BG and text color customization options.</p>
+<p>- Fixed UI bugs.</p>
+<br>
+<p>v1.1.0:</p>
+<p>- Added Megaminx, Pyraminx, Skewb, 5x5, and Square-1 support with scramble generator.</p>
+<p>- Added the new scramble feature.</p>
+<p>- Resized the text so it is compatible with all devices.</p>
+<br>
+<p>v1.0.0:</p>
+<p>- Added basic structure to the code and ui.</p>
+<p>- Added 2x2, 3x3, 4x4 support with scramble generator.</p>
+<p>- Added Ao5, Ao12, Ao50, Best time, Mean, and Count.</p>
+<p>- Added deleting last solve feature as well as marking +2 and copy current Ao5.</p>
+        </dialog>
+        <div class="toprbtn" id="toprbtn">
+            <label class="botrig">Cube : </label>
+            <select id="cube" class="botrig">
+                <option value="3x3">3x3</option>
+                <option value="2x2">2x2</option>
+                <option value="4x4">4x4</option>
+                <option value="5x5">5x5</option>
+                <option value="6x6">6x6</option>
+                <option value="7x7">7x7</option>
+                <option value="skewb">Skewb</option>
+                <option value="pyra">Pyraminx</option>
+                <option value="sq1">Square-1</option>
+                <option value="mega">Megaminx</option>
+                <option value="clock">Clock</option>
+                <option value="fto">FTO</option>
+            </select>
+        </div>
+    </body>
+    <script src="./code.js"></script>
+</html>
+
+
+

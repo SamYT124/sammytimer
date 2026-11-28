@@ -1,0 +1,126 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white; 
+}
+h1 {
+    font-size: clamp(2rem, 19.53vw, 31.25rem);
+    text-align: center;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+}
+.timer {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.stats {
+    position: absolute;
+    bottom: clamp(0.875rem, 1.15rem, 1.25rem);;
+    right: clamp(0.875rem, 1.15rem, 1.25rem);;
+    text-align: right; 
+}
+.botrig {
+    margin: 5px 0; 
+    font-size: clamp(1.5rem, 2vw, 3.125rem);
+    font-weight: normal; 
+}
+button:hover {
+    background-color: #747474;
+}
+.toprig {
+    font-size: clamp(1.5rem, 2vw, 3.125rem);
+    font-weight: normal; 
+    border-color: gray;
+    border-width: 5px;
+    width: 5%;
+}
+.setbtn {
+    margin: 5px 0; 
+    font-size: clamp(1.125rem, 0.925rem + 1vw, 1.5625rem);
+    font-weight: normal; 
+}
+.btmlbtn {
+    position: absolute;
+    bottom: clamp(0.875rem, 1.15rem, 1.25rem);
+    left: clamp(0.875rem, 1.15rem, 1.25rem);
+    max-width: clamp(360px, 148.89px + 52.78vw, 1500px);
+    width: 100%; 
+    text-align: left; 
+}
+.toplbtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: clamp(360px, 148.89px + 52.78vw, 1500px);
+    width: 100%; 
+    text-align: left; 
+}
+.toprbtn {
+    position: absolute;
+    top: clamp(0.875rem, 1.15rem, 1.25rem);;
+    right: clamp(0.875rem, 1.15rem, 1.25rem);;
+    text-align: left; 
+}
+.centertext {
+    text-align: center;
+}
+.scramble {
+    text-align: center;
+    font-size: 50px;
+    max-width: clamp(360px, 148.89px + 52.78vw, 1500px);
+    width: 100%;  
+    margin: 0 auto; 
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: clamp(0.875rem, 1.15rem, 1.25rem);
+}
+.cnlmodal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: clamp(0.875rem, 1.15rem, 1.25rem);
+}
+.cnlmodal h2 {
+    margin: 0;
+    font-size: clamp(0.875rem, 1.15rem, 1.25rem);
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: clamp(0.875rem, 1.15rem, 1.25rem);
+}
+.label {
+    font-size: 20px;
+    font-weight: bold;
+}
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+dialog:has(.cnlmodal) {
+    max-width: 70%;
+    max-height: 60%;
+}
